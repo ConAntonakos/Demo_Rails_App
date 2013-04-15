@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
 
 gem 'rails'
+gem 'bootstrap-sass'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -19,7 +19,7 @@ end
 
 group :test do
   gem 'capybara', '1.1.2'
-  gem 'rb-fsevent', '0.9.1', require: false
+  gem 'rb-fsevent', '0.9.1', :require => false
   gem 'growl', '1.0.3'
 end
 
