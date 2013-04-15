@@ -1,13 +1,13 @@
 DemoRailsApp::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/help"
-  get "static_pages/about"
-  get "static_pages/contact"
 
   resources :microposts
   resources :users
 
   root :to => "StaticPages#home"
+
+  match '/about', to: 'StaticPages#about'
+  match '/help', to: 'StaticPages#help'
+  match '/contact', to: 'StaticPages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
